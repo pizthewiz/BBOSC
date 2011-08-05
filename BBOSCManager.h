@@ -6,7 +6,7 @@
 //  Copyright 2009 Best Before Media Ltd. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 @class OSCManager, BBOSCInPort, OSCOutPort;
 @interface BBOSCManager : NSObject {

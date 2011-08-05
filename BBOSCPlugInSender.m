@@ -6,8 +6,6 @@
 //  Copyright (c) 2009 Best Before Media Ltd. All rights reserved.
 //
 
-/* It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering */
-#import <OpenGL/CGLMacro.h>
 #import "OSCMessage-BBExtensions.h"
 #import "BBOSCViewController.h"
 #import "BBOSCPlugInSender.h"
