@@ -1,4 +1,6 @@
-build
-*.mode1v3
-*.mode2v3
-*.pbxuser
+.DS_Store
+
+# ignore user-specific Xcode 4 project settings
+xcuserdata/
+# except defaults they are created from
+!xcuserdata/default.*
