@@ -25,15 +25,16 @@
 		16BA95420A7EB2EB001E4983 /* BBOSCPlugInSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* BBOSCPlugInSender.m */; };
 		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
 		D86D0EA413EBA1A70054AA86 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86D0EA313EBA1A70054AA86 /* AppKit.framework */; };
+		D8D6C25013EBDA3800156759 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6C23113EBDA0900156759 /* VVBasics.framework */; };
+		D8D6C25113EBDA3800156759 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6C23913EBDA0900156759 /* VVOSC.framework */; };
+		D8D6C25213EBDA3E00156759 /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8D6C23113EBDA0900156759 /* VVBasics.framework */; };
+		D8D6C25313EBDA3E00156759 /* VVOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8D6C23913EBDA0900156759 /* VVOSC.framework */; };
 		FC5209AC1056853800FE3004 /* BBOSCPluginReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */; };
 		FC520B0A1056B90000FE3004 /* BBOSCSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC520AC11056B56400FE3004 /* BBOSCSettings.xib */; };
 		FC520BFC1057E69B00FE3004 /* NSArray-BBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520BFB1057E69B00FE3004 /* NSArray-BBExtensions.m */; };
 		FC520CFB1058085100FE3004 /* BBOSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520CFA1058085100FE3004 /* BBOSCViewController.m */; };
 		FC520D301058137600FE3004 /* OSCMessage-BBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520D2F1058137600FE3004 /* OSCMessage-BBExtensions.m */; };
 		FC520E8F1059234900FE3004 /* BBOSCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520E8E1059234900FE3004 /* BBOSCManager.m */; };
-		FC520F6B105936B000FE3004 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC520F58105936A500FE3004 /* VVOSC.framework */; };
-		FC520F75105936CA00FE3004 /* VVOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC520F58105936A500FE3004 /* VVOSC.framework */; };
-		FCC290EA1059440700B73F44 /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC520F52105936A500FE3004 /* VVBasics.framework */; };
 		FCDF33AE1060FDF2001FAA34 /* BBOSCInPort.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF33AD1060FDF2001FAA34 /* BBOSCInPort.m */; };
 /* End PBXBuildFile section */
 
@@ -45,110 +46,110 @@
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = BBOSC;
 		};
-		FC520F51105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C23013EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 961EA8ED100E8565007E6C25;
 			remoteInfo = VVBasics;
 		};
-		FC520F53105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C23213EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 968FAA86108B6141000E470D;
+			remoteInfo = CrashReporterTestApp;
+		};
+		D8D6C23413EBDA0900156759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 961745F4100F86B400FB60E6;
 			remoteInfo = VVMIDI;
 		};
-		FC520F55105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C23613EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9656D900100F89BA0064EEA6;
 			remoteInfo = MIDITestApp;
 		};
-		FC520F57105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C23813EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9628D0C5100E89F700C3944E;
 			remoteInfo = VVOSC;
 		};
-		FC520F59105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C23A13EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9628D179100E8B4D00C3944E;
 			remoteInfo = OSCTestApp;
 		};
-		FC520F5B105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C23C13EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9606B14D101761EF00CC50B7;
-			remoteInfo = VVFFGL;
+			remoteGlobalIDString = 96B49302106AEB4C008FB26E;
+			remoteInfo = MIDIviaOSC;
 		};
-		FC520F5D105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C23E13EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9606B15C1017621200CC50B7;
-			remoteInfo = FFGLTestApp;
-		};
-		FC520F5F105936A500FE3004 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9628D0D9100E8A1600C3944E;
 			remoteInfo = "VVOSC-iPhone sim SDK";
 		};
-		FC520F61105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C24013EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9628D0E2100E8A1F00C3944E;
 			remoteInfo = "VVOSC-iPhone dev SDK";
 		};
-		FC520F63105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C24213EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9628D0EB100E8A2C00C3944E;
 			remoteInfo = "VVOSC-os x SDK";
 		};
-		FC520F65105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C24413EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9666941210304C0500DB5FDF;
 			remoteInfo = "VVBasics-iPhone sim SDK";
 		};
-		FC520F67105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C24613EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9666942710304C1F00DB5FDF;
 			remoteInfo = "VVBasics-iPhone dev SDK";
 		};
-		FC520F69105936A500FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C24813EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9666943810304C2E00DB5FDF;
 			remoteInfo = "VVBasics-os x SDK";
 		};
-		FC520F6D105936BA00FE3004 /* PBXContainerItemProxy */ = {
+		D8D6C24A13EBDA0900156759 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96EF5A39122AF2D900F40F69;
+			remoteInfo = "VVMIDI-os x SDK";
+		};
+		D8D6C24E13EBDA2600156759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 9628D0C4100E89F700C3944E;
 			remoteInfo = VVOSC;
-		};
-		FCC290E6105943FF00B73F44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 961EA8EC100E8565007E6C25;
-			remoteInfo = VVBasics;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -159,8 +160,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FCC290EA1059440700B73F44 /* VVBasics.framework in CopyFiles */,
-				FC520F75105936CA00FE3004 /* VVOSC.framework in CopyFiles */,
+				D8D6C25213EBDA3E00156759 /* VVBasics.framework in CopyFiles */,
+				D8D6C25313EBDA3E00156759 /* VVOSC.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +177,7 @@
 		D86D0EA313EBA1A70054AA86 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../../../../../System/Library/Frameworks/AppKit.framework; sourceTree = "<group>"; };
 		D8D6C1F513EBC24300156759 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		D8D6C1F913EBC6AF00156759 /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VVOpenSource.xcodeproj; path = vendor/VVOpenSource/VVOpenSource.xcodeproj; sourceTree = "<group>"; };
 		FC5209AA1056853800FE3004 /* BBOSCPluginReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCPluginReceiver.h; sourceTree = "<group>"; };
 		FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCPluginReceiver.m; sourceTree = "<group>"; };
 		FC520AC11056B56400FE3004 /* BBOSCSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBOSCSettings.xib; sourceTree = "<group>"; };
@@ -187,7 +189,6 @@
 		FC520D2F1058137600FE3004 /* OSCMessage-BBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OSCMessage-BBExtensions.m"; sourceTree = "<group>"; };
 		FC520E8D1059234900FE3004 /* BBOSCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCManager.h; sourceTree = "<group>"; };
 		FC520E8E1059234900FE3004 /* BBOSCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCManager.m; sourceTree = "<group>"; };
-		FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VVOpenSource.xcodeproj; path = lib/vvosc/VVOpenSource.xcodeproj; sourceTree = "<group>"; };
 		FCDF33AC1060FDF2001FAA34 /* BBOSCInPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCInPort.h; sourceTree = "<group>"; };
 		FCDF33AD1060FDF2001FAA34 /* BBOSCInPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCInPort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,7 +200,8 @@
 			files = (
 				D86D0EA413EBA1A70054AA86 /* AppKit.framework in Frameworks */,
 				16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */,
-				FC520F6B105936B000FE3004 /* VVOSC.framework in Frameworks */,
+				D8D6C25013EBDA3800156759 /* VVBasics.framework in Frameworks */,
+				D8D6C25113EBDA3800156759 /* VVOSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +211,7 @@
 		089C166AFE841209C02AAC07 /* Quartz Composer Plug In */ = {
 			isa = PBXGroup;
 			children = (
-				FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */,
+				D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -276,22 +278,23 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		FC520F3D105936A500FE3004 /* Products */ = {
+		D8D6C21713EBDA0900156759 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC520F52105936A500FE3004 /* VVBasics.framework */,
-				FC520F54105936A500FE3004 /* VVMIDI.framework */,
-				FC520F56105936A500FE3004 /* MIDITestApp.app */,
-				FC520F58105936A500FE3004 /* VVOSC.framework */,
-				FC520F5A105936A500FE3004 /* OSCTestApp.app */,
-				FC520F5C105936A500FE3004 /* VVFFGL.framework */,
-				FC520F5E105936A500FE3004 /* FFGLTestApp.app */,
-				FC520F60105936A500FE3004 /* libVVOSC.a */,
-				FC520F62105936A500FE3004 /* libVVOSC.a */,
-				FC520F64105936A500FE3004 /* libVVOSC.a */,
-				FC520F66105936A500FE3004 /* libVVBasics.a */,
-				FC520F68105936A500FE3004 /* libVVBasics.a */,
-				FC520F6A105936A500FE3004 /* libVVBasics.a */,
+				D8D6C23113EBDA0900156759 /* VVBasics.framework */,
+				D8D6C23313EBDA0900156759 /* CrashReporterTestApp.app */,
+				D8D6C23513EBDA0900156759 /* VVMIDI.framework */,
+				D8D6C23713EBDA0900156759 /* MIDITestApp.app */,
+				D8D6C23913EBDA0900156759 /* VVOSC.framework */,
+				D8D6C23B13EBDA0900156759 /* OSCTestApp.app */,
+				D8D6C23D13EBDA0900156759 /* MIDIviaOSC.app */,
+				D8D6C23F13EBDA0900156759 /* libVVOSC.a */,
+				D8D6C24113EBDA0900156759 /* libVVOSC.a */,
+				D8D6C24313EBDA0900156759 /* libVVOSC.a */,
+				D8D6C24513EBDA0900156759 /* libVVBasics.a */,
+				D8D6C24713EBDA0900156759 /* libVVBasics.a */,
+				D8D6C24913EBDA0900156759 /* libVVBasics.a */,
+				D8D6C24B13EBDA0900156759 /* libVVMIDI.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,8 +314,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FC520F6E105936BA00FE3004 /* PBXTargetDependency */,
-				FCC290E7105943FF00B73F44 /* PBXTargetDependency */,
+				D8D6C24F13EBDA2600156759 /* PBXTargetDependency */,
 			);
 			name = BBOSC;
 			productInstallPath = "$(HOME)/Library/Bundles";
@@ -336,8 +338,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = FC520F3D105936A500FE3004 /* Products */;
-					ProjectRef = FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */;
+					ProductGroup = D8D6C21713EBDA0900156759 /* Products */;
+					ProjectRef = D8D6C21613EBDA0900156759 /* VVOpenSource.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -349,95 +351,102 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FC520F52105936A500FE3004 /* VVBasics.framework */ = {
+		D8D6C23113EBDA0900156759 /* VVBasics.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = VVBasics.framework;
-			remoteRef = FC520F51105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C23013EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F54105936A500FE3004 /* VVMIDI.framework */ = {
+		D8D6C23313EBDA0900156759 /* CrashReporterTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CrashReporterTestApp.app;
+			remoteRef = D8D6C23213EBDA0900156759 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8D6C23513EBDA0900156759 /* VVMIDI.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = VVMIDI.framework;
-			remoteRef = FC520F53105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C23413EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F56105936A500FE3004 /* MIDITestApp.app */ = {
+		D8D6C23713EBDA0900156759 /* MIDITestApp.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = MIDITestApp.app;
-			remoteRef = FC520F55105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C23613EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F58105936A500FE3004 /* VVOSC.framework */ = {
+		D8D6C23913EBDA0900156759 /* VVOSC.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = VVOSC.framework;
-			remoteRef = FC520F57105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C23813EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F5A105936A500FE3004 /* OSCTestApp.app */ = {
+		D8D6C23B13EBDA0900156759 /* OSCTestApp.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = OSCTestApp.app;
-			remoteRef = FC520F59105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C23A13EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F5C105936A500FE3004 /* VVFFGL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = VVFFGL.framework;
-			remoteRef = FC520F5B105936A500FE3004 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FC520F5E105936A500FE3004 /* FFGLTestApp.app */ = {
+		D8D6C23D13EBDA0900156759 /* MIDIviaOSC.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = FFGLTestApp.app;
-			remoteRef = FC520F5D105936A500FE3004 /* PBXContainerItemProxy */;
+			path = MIDIviaOSC.app;
+			remoteRef = D8D6C23C13EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F60105936A500FE3004 /* libVVOSC.a */ = {
+		D8D6C23F13EBDA0900156759 /* libVVOSC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libVVOSC.a;
-			remoteRef = FC520F5F105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C23E13EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F62105936A500FE3004 /* libVVOSC.a */ = {
+		D8D6C24113EBDA0900156759 /* libVVOSC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libVVOSC.a;
-			remoteRef = FC520F61105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C24013EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F64105936A500FE3004 /* libVVOSC.a */ = {
+		D8D6C24313EBDA0900156759 /* libVVOSC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libVVOSC.a;
-			remoteRef = FC520F63105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C24213EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F66105936A500FE3004 /* libVVBasics.a */ = {
+		D8D6C24513EBDA0900156759 /* libVVBasics.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libVVBasics.a;
-			remoteRef = FC520F65105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C24413EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F68105936A500FE3004 /* libVVBasics.a */ = {
+		D8D6C24713EBDA0900156759 /* libVVBasics.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libVVBasics.a;
-			remoteRef = FC520F67105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C24613EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC520F6A105936A500FE3004 /* libVVBasics.a */ = {
+		D8D6C24913EBDA0900156759 /* libVVBasics.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libVVBasics.a;
-			remoteRef = FC520F69105936A500FE3004 /* PBXContainerItemProxy */;
+			remoteRef = D8D6C24813EBDA0900156759 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8D6C24B13EBDA0900156759 /* libVVMIDI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVVMIDI.a;
+			remoteRef = D8D6C24A13EBDA0900156759 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -492,15 +501,10 @@
 			target = 8D5B49AC048680CD000E48DA /* BBOSC */;
 			targetProxy = 233E2C650A83C76D005A62DF /* PBXContainerItemProxy */;
 		};
-		FC520F6E105936BA00FE3004 /* PBXTargetDependency */ = {
+		D8D6C24F13EBDA2600156759 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VVOSC;
-			targetProxy = FC520F6D105936BA00FE3004 /* PBXContainerItemProxy */;
-		};
-		FCC290E7105943FF00B73F44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VVBasics;
-			targetProxy = FCC290E6105943FF00B73F44 /* PBXContainerItemProxy */;
+			targetProxy = D8D6C24E13EBDA2600156759 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
