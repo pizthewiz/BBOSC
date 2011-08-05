@@ -177,11 +177,6 @@
 		16BA96300A7EB9AC001E4983 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		8D5B49B6048680CD000E48DA /* BBOSC.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBOSC.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC52093510567D6200FE3004 /* Project-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Base.xcconfig"; path = "/Code/Config/Project-Base.xcconfig"; sourceTree = "<absolute>"; };
-		FC52093610567D6200FE3004 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Debug.xcconfig"; path = "/Code/Config/Project-Debug.xcconfig"; sourceTree = "<absolute>"; };
-		FC52093710567D6200FE3004 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Release.xcconfig"; path = "/Code/Config/Project-Release.xcconfig"; sourceTree = "<absolute>"; };
-		FC52093810567D6200FE3004 /* Target-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Target-Base.xcconfig"; path = "/Code/Config/Target-Base.xcconfig"; sourceTree = "<absolute>"; };
-		FC52093910567D6200FE3004 /* Target-QCPlugin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Target-QCPlugin.xcconfig"; path = "/Code/Config/Target-QCPlugin.xcconfig"; sourceTree = "<absolute>"; };
 		FC5209AA1056853800FE3004 /* BBOSCPluginReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCPluginReceiver.h; sourceTree = "<group>"; };
 		FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCPluginReceiver.m; sourceTree = "<group>"; };
 		FC520AC11056B56400FE3004 /* BBOSCSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBOSCSettings.xib; sourceTree = "<group>"; };
@@ -218,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */,
-				FC52093410567D4300FE3004 /* Build Config */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -282,18 +276,6 @@
 				16AA5C440A7EEE7300888E31 /* BBOSC_Prefix.pch */,
 			);
 			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		FC52093410567D4300FE3004 /* Build Config */ = {
-			isa = PBXGroup;
-			children = (
-				FC52093510567D6200FE3004 /* Project-Base.xcconfig */,
-				FC52093610567D6200FE3004 /* Project-Debug.xcconfig */,
-				FC52093710567D6200FE3004 /* Project-Release.xcconfig */,
-				FC52093810567D6200FE3004 /* Target-Base.xcconfig */,
-				FC52093910567D6200FE3004 /* Target-QCPlugin.xcconfig */,
-			);
-			name = "Build Config";
 			sourceTree = "<group>";
 		};
 		FC520F3D105936A500FE3004 /* Products */ = {
@@ -527,7 +509,6 @@
 /* Begin XCBuildConfiguration section */
 		1DEB913B08733D840010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC52093910567D6200FE3004 /* Target-QCPlugin.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -552,7 +533,6 @@
 		};
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC52093910567D6200FE3004 /* Target-QCPlugin.xcconfig */;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -573,7 +553,6 @@
 		};
 		1DEB913F08733D840010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC52093610567D6200FE3004 /* Project-Debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -589,7 +568,6 @@
 		};
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC52093710567D6200FE3004 /* Project-Release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
