@@ -7,7 +7,7 @@
 //
 
 #import "BBOSCInPort.h"
-#import "OSCExtensions.h"
+#import "OSCMessage-BBExtensions.h"
 
 @implementation BBOSCInPort
 -(id)initWithManager:(OSCManager*)manager withPort:(unsigned int)p label:(NSString*)l {

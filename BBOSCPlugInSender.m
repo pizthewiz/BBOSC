@@ -8,10 +8,10 @@
 
 /* It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering */
 #import <OpenGL/CGLMacro.h>
-#import "OSCExtensions.h"
+#import "OSCMessage-BBExtensions.h"
 #import "BBOSCViewController.h"
 #import "BBOSCPlugInSender.h"
-#import "NSArrayExtensions.h"
+#import "NSArray-BBExtensions.h"
 #import "BBOSCManager.h"
 #define	kQCPlugIn_Name				@"BBOSC Sender"
 #define	kQCPlugIn_Description		@"Best Before Open Sound Control sender plugin"

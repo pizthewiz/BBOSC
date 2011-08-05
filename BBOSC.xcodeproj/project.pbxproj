@@ -27,9 +27,9 @@
 		D86D0EA413EBA1A70054AA86 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86D0EA313EBA1A70054AA86 /* AppKit.framework */; };
 		FC5209AC1056853800FE3004 /* BBOSCPluginReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */; };
 		FC520B0A1056B90000FE3004 /* BBOSCSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC520AC11056B56400FE3004 /* BBOSCSettings.xib */; };
-		FC520BFC1057E69B00FE3004 /* NSArrayExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520BFB1057E69B00FE3004 /* NSArrayExtensions.m */; };
+		FC520BFC1057E69B00FE3004 /* NSArray-BBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520BFB1057E69B00FE3004 /* NSArray-BBExtensions.m */; };
 		FC520CFB1058085100FE3004 /* BBOSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520CFA1058085100FE3004 /* BBOSCViewController.m */; };
-		FC520D301058137600FE3004 /* OSCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520D2F1058137600FE3004 /* OSCExtensions.m */; };
+		FC520D301058137600FE3004 /* OSCMessage-BBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520D2F1058137600FE3004 /* OSCMessage-BBExtensions.m */; };
 		FC520E8F1059234900FE3004 /* BBOSCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC520E8E1059234900FE3004 /* BBOSCManager.m */; };
 		FC520F6B105936B000FE3004 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC520F58105936A500FE3004 /* VVOSC.framework */; };
 		FC520F75105936CA00FE3004 /* VVOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC520F58105936A500FE3004 /* VVOSC.framework */; };
@@ -179,12 +179,12 @@
 		FC5209AA1056853800FE3004 /* BBOSCPluginReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCPluginReceiver.h; sourceTree = "<group>"; };
 		FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCPluginReceiver.m; sourceTree = "<group>"; };
 		FC520AC11056B56400FE3004 /* BBOSCSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBOSCSettings.xib; sourceTree = "<group>"; };
-		FC520BFA1057E69B00FE3004 /* NSArrayExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayExtensions.h; sourceTree = "<group>"; };
-		FC520BFB1057E69B00FE3004 /* NSArrayExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayExtensions.m; sourceTree = "<group>"; };
+		FC520BFA1057E69B00FE3004 /* NSArray-BBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSArray-BBExtensions.h"; sourceTree = "<group>"; };
+		FC520BFB1057E69B00FE3004 /* NSArray-BBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray-BBExtensions.m"; sourceTree = "<group>"; };
 		FC520CF91058085100FE3004 /* BBOSCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCViewController.h; sourceTree = "<group>"; };
 		FC520CFA1058085100FE3004 /* BBOSCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCViewController.m; sourceTree = "<group>"; };
-		FC520D2E1058137600FE3004 /* OSCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCExtensions.h; sourceTree = "<group>"; };
-		FC520D2F1058137600FE3004 /* OSCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCExtensions.m; sourceTree = "<group>"; };
+		FC520D2E1058137600FE3004 /* OSCMessage-BBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "OSCMessage-BBExtensions.h"; sourceTree = "<group>"; };
+		FC520D2F1058137600FE3004 /* OSCMessage-BBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OSCMessage-BBExtensions.m"; sourceTree = "<group>"; };
 		FC520E8D1059234900FE3004 /* BBOSCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCManager.h; sourceTree = "<group>"; };
 		FC520E8E1059234900FE3004 /* BBOSCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCManager.m; sourceTree = "<group>"; };
 		FC520F3C105936A500FE3004 /* VVOpenSource.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VVOpenSource.xcodeproj; path = lib/vvosc/VVOpenSource.xcodeproj; sourceTree = "<group>"; };
@@ -246,12 +246,12 @@
 				16BA95410A7EB2EB001E4983 /* BBOSCPlugInSender.m */,
 				FC5209AA1056853800FE3004 /* BBOSCPluginReceiver.h */,
 				FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */,
-				FC520BFA1057E69B00FE3004 /* NSArrayExtensions.h */,
-				FC520BFB1057E69B00FE3004 /* NSArrayExtensions.m */,
+				FC520BFA1057E69B00FE3004 /* NSArray-BBExtensions.h */,
+				FC520BFB1057E69B00FE3004 /* NSArray-BBExtensions.m */,
 				FC520CF91058085100FE3004 /* BBOSCViewController.h */,
 				FC520CFA1058085100FE3004 /* BBOSCViewController.m */,
-				FC520D2E1058137600FE3004 /* OSCExtensions.h */,
-				FC520D2F1058137600FE3004 /* OSCExtensions.m */,
+				FC520D2E1058137600FE3004 /* OSCMessage-BBExtensions.h */,
+				FC520D2F1058137600FE3004 /* OSCMessage-BBExtensions.m */,
 				FC520E8D1059234900FE3004 /* BBOSCManager.h */,
 				FC520E8E1059234900FE3004 /* BBOSCManager.m */,
 				FCDF33AC1060FDF2001FAA34 /* BBOSCInPort.h */,
@@ -476,9 +476,9 @@
 			files = (
 				16BA95420A7EB2EB001E4983 /* BBOSCPlugInSender.m in Sources */,
 				FC5209AC1056853800FE3004 /* BBOSCPluginReceiver.m in Sources */,
-				FC520BFC1057E69B00FE3004 /* NSArrayExtensions.m in Sources */,
+				FC520BFC1057E69B00FE3004 /* NSArray-BBExtensions.m in Sources */,
 				FC520CFB1058085100FE3004 /* BBOSCViewController.m in Sources */,
-				FC520D301058137600FE3004 /* OSCExtensions.m in Sources */,
+				FC520D301058137600FE3004 /* OSCMessage-BBExtensions.m in Sources */,
 				FC520E8F1059234900FE3004 /* BBOSCManager.m in Sources */,
 				FCDF33AE1060FDF2001FAA34 /* BBOSCInPort.m in Sources */,
 			);

@@ -1,12 +1,12 @@
 //
-//  NSArrayExtensions.m
+//  NSArray-BBExtensions.m
 //  BBOSC
 //
 //  Created by Jonathan del Strother on 09/09/2009.
 //  Copyright 2009 Best Before Media Ltd. All rights reserved.
 //
 
-#import "NSArrayExtensions.h"
+#import "NSArray-BBExtensions.h"
 
 
 @implementation NSArray(BBExtensions)
