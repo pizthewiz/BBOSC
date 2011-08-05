@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 233E2D890A83C7AC005A62DF /* Build configuration list for PBXAggregateTarget "Build & Copy" */;
 			buildPhases = (
-				233E2C690A83C783005A62DF /* ShellScript */,
+				233E2C690A83C783005A62DF /* Copy Plug-In To Destination */,
 			);
 			dependencies = (
 				233E2C660A83C76D005A62DF /* PBXTargetDependency */,
@@ -463,13 +463,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		233E2C690A83C783005A62DF /* ShellScript */ = {
+		233E2C690A83C783005A62DF /* Copy Plug-In To Destination */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Copy Plug-In To Destination";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
