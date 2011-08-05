@@ -1,0 +1,4 @@
+
+v1.0.1 (5 Aug 2011)
+* modernize project file settings to Xcode 4 on Lion, remove BWToolkit use
+* update core OSC library to the latest version
