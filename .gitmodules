@@ -1,0 +1,3 @@
+[submodule "vendor/VVOpenSource"]
+	path = vendor/VVOpenSource
+	url = git@github.com:pizthewiz/VVOpenSource.git
