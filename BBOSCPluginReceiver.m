@@ -200,7 +200,7 @@
 			NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];	// OSC only closes the socket once the port gets dealloced - be careful to force it to release as soon as possible
 			[[BBOSCManager sharedManager] removeInput:self.oscPort];
 			self.oscPort = nil;
-			[pool release];
+			[pool drain];
 		}
 		
 		NSString* label = self.inputLabel;
