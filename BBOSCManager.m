@@ -92,7 +92,7 @@
 }
 - (OSCOutPort *) createNewOutputToAddress:(NSString *)a atPort:(int)p withLabel:(NSString *)l {
 	if ([a isEqualToString:@"0.0.0.0"])	// Broadcast to everyone
-		return (OSCOutPort*)[[[BBOSCBroadcastPort alloc] initWithManager:oscManager atPort:p] autorelease];
+		return [[[BBOSCBroadcastPort alloc] initWithManager:oscManager atPort:p] autorelease];
 	return [oscManager createNewOutputToAddress:a atPort:p withLabel:l];
 }
 - (void) removeInput:(BBOSCInPort*)p {
