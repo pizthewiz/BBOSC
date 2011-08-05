@@ -24,7 +24,7 @@
 /* Begin PBXBuildFile section */
 		16BA95420A7EB2EB001E4983 /* BBOSCPlugInSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* BBOSCPlugInSender.m */; };
 		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
-		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		D86D0EA413EBA1A70054AA86 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86D0EA313EBA1A70054AA86 /* AppKit.framework */; };
 		FC5209AC1056853800FE3004 /* BBOSCPluginReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */; };
 		FC520AD61056B6F200FE3004 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC520AD51056B6F200FE3004 /* BWToolkitFramework.framework */; };
 		FC520AD91056B6FD00FE3004 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC520AD51056B6F200FE3004 /* BWToolkitFramework.framework */; };
@@ -170,13 +170,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		16AA5C440A7EEE7300888E31 /* BBOSC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BBOSC_Prefix.pch; sourceTree = "<group>"; };
 		16BA95400A7EB2EB001E4983 /* BBOSCPlugInSender.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BBOSCPlugInSender.h; sourceTree = "<group>"; };
 		16BA95410A7EB2EB001E4983 /* BBOSCPlugInSender.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = BBOSCPlugInSender.m; sourceTree = "<group>"; };
 		16BA96300A7EB9AC001E4983 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		8D5B49B6048680CD000E48DA /* BBOSC.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBOSC.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86D0EA313EBA1A70054AA86 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../../../../../System/Library/Frameworks/AppKit.framework; sourceTree = "<group>"; };
 		FC5209AA1056853800FE3004 /* BBOSCPluginReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCPluginReceiver.h; sourceTree = "<group>"; };
 		FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCPluginReceiver.m; sourceTree = "<group>"; };
 		FC520AC11056B56400FE3004 /* BBOSCSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBOSCSettings.xib; sourceTree = "<group>"; };
@@ -199,9 +199,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC520F6B105936B000FE3004 /* VVOSC.framework in Frameworks */,
-				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				D86D0EA413EBA1A70054AA86 /* AppKit.framework in Frameworks */,
 				16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */,
+				FC520F6B105936B000FE3004 /* VVOSC.framework in Frameworks */,
 				FC520AD61056B6F200FE3004 /* BWToolkitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +227,7 @@
 			children = (
 				FC520AD51056B6F200FE3004 /* BWToolkitFramework.framework */,
 				16BA96300A7EB9AC001E4983 /* Quartz.framework */,
-				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				D86D0EA313EBA1A70054AA86 /* AppKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
