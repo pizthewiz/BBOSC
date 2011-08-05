@@ -3,3 +3,4 @@
 [X] rename class extension files
 [ ] create a new project file
 [ ] add example composition and categorize for Lion
+[ ] move constants from BBOSCViewController.h to BBOSC.h
