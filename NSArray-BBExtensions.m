@@ -35,11 +35,12 @@
 }
 
 -(NSDictionary*)qcStructure {
-	int i=0;
-	NSMutableDictionary* result = [NSMutableDictionary dictionary];
-	for(id object in self) {
-		[result setObject:object forKey:[NSString stringWithFormat:@"%d", i++]];
-	}
-	return result;
+    NSMutableDictionary* result = [NSMutableDictionary dictionaryWithCapacity:self.count];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString* key = [[NSString alloc] initWithFormat:@"%d", (unsigned long)idx];
+        [result setObject:obj forKey:key];
+        [key release];
+    }];
+    return result;
 }
 @end
