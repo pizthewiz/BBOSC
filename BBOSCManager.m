@@ -46,11 +46,14 @@
 
 @implementation BBOSCManager
 
-static id sharedManager=nil;
 +(BBOSCManager*)sharedManager {
-	if (!sharedManager)
-		sharedManager = [[self alloc] init];
-	return sharedManager;
+    static dispatch_once_t pred;
+    static BBOSCManager* sharedManager = nil;
+
+    dispatch_once(&pred, ^{
+        sharedManager = [[BBOSCManager alloc] init];
+    });
+    return sharedManager;
 }
 -(id)init {
 	if (self = [super init]) {
