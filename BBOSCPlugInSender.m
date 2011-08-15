@@ -151,6 +151,9 @@
 	/*
 	Called by Quartz Composer when the plug-in instance starts being used by Quartz Composer.
 	*/
+
+    if (self.broadcastAddress && self.broadcastPort)
+        [self _setupOSCPort];
 }
 
 - (BOOL) execute:(id<QCPlugInContext>)context atTime:(NSTimeInterval)time withArguments:(NSDictionary*)arguments
@@ -165,8 +168,11 @@
 	*/
 	
 	BOOL inputsChanged = NO;
-	
-	if ([self didValueForInputKeyChange:@"inputBroadcastAddress"] || [self didValueForInputKeyChange:@"inputBroadcastPort"]) {
+
+    if (([self didValueForInputKeyChange:@"inputBroadcastAddress"] || [self didValueForInputKeyChange:@"inputBroadcastPort"]) && self.inputBroadcastAddress && self.inputBroadcastPort) {
+        self.broadcastAddress = self.inputBroadcastAddress;
+        self.broadcastPort = self.inputBroadcastPort;
+
         [self _setupOSCPort];
 		if (!self.oscPort)
 			NSLog(@"Failed to create output port");
@@ -221,14 +227,14 @@
 #pragma mark - PRIVATE
 
 - (void)_setupOSCPort {
-    if (!(self.inputBroadcastAddress && self.inputBroadcastPort)) {
+    if (!(self.broadcastAddress && self.broadcastPort)) {
         NSLog(@"ERROR - creation failed, need valid address and port");
         return;
     }
 
     if (self.oscPort)
         [[BBOSCManager sharedManager] removeOutput:self.oscPort];
-    self.oscPort = [[BBOSCManager sharedManager] createNewOutputToAddress:self.inputBroadcastAddress atPort:self.inputBroadcastPort withLabel:@"BB OSC Output"];
+    self.oscPort = [[BBOSCManager sharedManager] createNewOutputToAddress:self.broadcastAddress atPort:self.broadcastPort withLabel:@"BB OSC Output"];
 }
 
 @end
