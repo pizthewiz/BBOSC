@@ -18,6 +18,7 @@
 @interface BBOSCPlugInSender ()
 @property (nonatomic, readwrite, retain) OSCOutPort *oscPort;
 @property (nonatomic, readwrite, retain) NSArray* oscParameters;
+- (void)_setupOSCPort;
 @end
 
 @implementation BBOSCPlugInSender
@@ -166,9 +167,7 @@
 	BOOL inputsChanged = NO;
 	
 	if ([self didValueForInputKeyChange:@"inputBroadcastAddress"] || [self didValueForInputKeyChange:@"inputBroadcastPort"]) {
-		if (self.oscPort)
-			[[BBOSCManager sharedManager] removeOutput:self.oscPort];
-		self.oscPort = [[BBOSCManager sharedManager] createNewOutputToAddress:self.inputBroadcastAddress atPort:self.inputBroadcastPort withLabel:@"BB OSC Output"];
+        [self _setupOSCPort];
 		if (!self.oscPort)
 			NSLog(@"Failed to create output port");
 		inputsChanged = YES;
@@ -217,6 +216,19 @@
 	/*
 	Called by Quartz Composer when rendering of the composition stops: perform any required cleanup for the plug-in.
 	*/
+}
+
+#pragma mark - PRIVATE
+
+- (void)_setupOSCPort {
+    if (!(self.inputBroadcastAddress && self.inputBroadcastPort)) {
+        NSLog(@"ERROR - creation failed, need valid address and port");
+        return;
+    }
+
+    if (self.oscPort)
+        [[BBOSCManager sharedManager] removeOutput:self.oscPort];
+    self.oscPort = [[BBOSCManager sharedManager] createNewOutputToAddress:self.inputBroadcastAddress atPort:self.inputBroadcastPort withLabel:@"BB OSC Output"];
 }
 
 @end
