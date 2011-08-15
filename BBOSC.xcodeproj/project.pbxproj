@@ -182,11 +182,11 @@
 		FC5209AA1056853800FE3004 /* BBOSCPluginReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCPluginReceiver.h; sourceTree = "<group>"; };
 		FC5209AB1056853800FE3004 /* BBOSCPluginReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCPluginReceiver.m; sourceTree = "<group>"; };
 		FC520AC11056B56400FE3004 /* BBOSCSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBOSCSettings.xib; sourceTree = "<group>"; };
-		FC520BFA1057E69B00FE3004 /* NSArray+BBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSArray+BBExtensions.h"; sourceTree = "<group>"; };
+		FC520BFA1057E69B00FE3004 /* NSArray+BBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BBExtensions.h"; sourceTree = "<group>"; };
 		FC520BFB1057E69B00FE3004 /* NSArray+BBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BBExtensions.m"; sourceTree = "<group>"; };
 		FC520CF91058085100FE3004 /* BBOSCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCViewController.h; sourceTree = "<group>"; };
 		FC520CFA1058085100FE3004 /* BBOSCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCViewController.m; sourceTree = "<group>"; };
-		FC520D2E1058137600FE3004 /* OSCMessage+BBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "OSCMessage+BBExtensions.h"; sourceTree = "<group>"; };
+		FC520D2E1058137600FE3004 /* OSCMessage+BBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSCMessage+BBExtensions.h"; sourceTree = "<group>"; };
 		FC520D2F1058137600FE3004 /* OSCMessage+BBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OSCMessage+BBExtensions.m"; sourceTree = "<group>"; };
 		FC520E8D1059234900FE3004 /* BBOSCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOSCManager.h; sourceTree = "<group>"; };
 		FC520E8E1059234900FE3004 /* BBOSCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOSCManager.m; sourceTree = "<group>"; };
@@ -329,6 +329,9 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "BBOSC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -522,7 +525,6 @@
 					"\"$(SRCROOT)/lib/vvosc/build/$(CONFIGURATION)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
