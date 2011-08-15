@@ -7,8 +7,8 @@
 //
 
 #import "BBOSCManager.h"
-#import "OSCMessage-BBExtensions.h"
-#import "NSArray-BBExtensions.h"
+#import "OSCMessage+BBExtensions.h"
+#import "NSArray+BBExtensions.h"
 #import "BBOSCInPort.h"
 #import <VVOSC/OSCOutPort.h>
 

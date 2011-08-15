@@ -1,5 +1,5 @@
 //
-//  NSArray-BBExtensions.h
+//  NSArray+BBExtensions.h
 //  BBOSC
 //
 //  Created by Jonathan del Strother on 09/09/2009.

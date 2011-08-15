@@ -8,8 +8,8 @@
 
 #import "BBOSCPluginReceiver.h"
 #import "BBOSCViewController.h"
-#import "NSArray-BBExtensions.h"
-#import "OSCMessage-BBExtensions.h"
+#import "NSArray+BBExtensions.h"
+#import "OSCMessage+BBExtensions.h"
 #import "BBOSCManager.h"
 
 #define	kQCPlugIn_Name				@"BBOSC Receiver"

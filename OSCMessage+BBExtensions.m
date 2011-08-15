@@ -1,12 +1,12 @@
 //
-//  OSCMessage-BBExtensions.m
+//  OSCMessage+BBExtensions.m
 //  BBOSC
 //
 //  Created by Jonathan del Strother on 09/09/2009.
 //  Copyright 2009 Best Before Media Ltd. All rights reserved.
 //
 
-#import "OSCMessage-BBExtensions.h"
+#import "OSCMessage+BBExtensions.h"
 
 @implementation OSCMessage(BBExtensions)
 -(void)addNSValue:(id)newValue withBias:(BBOSCType)bias {

@@ -6,10 +6,10 @@
 //  Copyright (c) 2009 Best Before Media Ltd. All rights reserved.
 //
 
-#import "OSCMessage-BBExtensions.h"
+#import "OSCMessage+BBExtensions.h"
 #import "BBOSCViewController.h"
 #import "BBOSCPlugInSender.h"
-#import "NSArray-BBExtensions.h"
+#import "NSArray+BBExtensions.h"
 #import "BBOSCManager.h"
 #define	kQCPlugIn_Name				@"BBOSC Sender"
 #define	kQCPlugIn_Description		@"Best Before Open Sound Control sender plugin"
