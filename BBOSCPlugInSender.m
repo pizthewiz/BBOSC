@@ -15,14 +15,16 @@
 #define	kQCPlugIn_Description		@"Best Before Open Sound Control sender plugin"
 
 
-@interface BBOSCPlugInSender ()
+@interface BBOSCPlugInSender()
 @property (nonatomic, readwrite, retain) OSCOutPort *oscPort;
 @property (nonatomic, readwrite, retain) NSArray* oscParameters;
+@property (nonatomic, retain) NSString* broadcastAddress;
+@property (nonatomic) NSUInteger broadcastPort;
 - (void)_setupOSCPort;
 @end
 
 @implementation BBOSCPlugInSender
-@synthesize oscPort, oscParameters;
+@synthesize oscPort, oscParameters, broadcastAddress = _broadcastAddress, broadcastPort = _broadcastPort;
 @dynamic inputBroadcastPort, inputBroadcastPath, inputBroadcastAddress, inputTickle;
 
 + (NSDictionary*) attributes
@@ -132,9 +134,7 @@
 	}
 }
 
-@end
-
-@implementation BBOSCPlugInSender (Execution)
+#pragma mark - EXECUTION
 
 - (BOOL) startExecution:(id<QCPlugInContext>)context
 {

@@ -11,6 +11,8 @@
 @class OSCManager, OSCOutPort;
 @interface BBOSCPlugInSender : QCPlugIn {
 	id oscPort, oscParameters;
+    NSString* _broadcastAddress;
+    NSUInteger _broadcastPort;
 }
 @property (nonatomic, readonly, retain) OSCOutPort *oscPort;
 @property (nonatomic, readonly, retain) NSArray* oscParameters;
@@ -19,5 +21,4 @@
 @property (nonatomic, readwrite, assign) NSUInteger inputBroadcastPort;
 @property (nonatomic, readwrite, assign) NSString* inputBroadcastPath;
 @property (nonatomic, readwrite, assign) BOOL inputTickle;
-
 @end
