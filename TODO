@@ -4,3 +4,5 @@
 [ ] create a new project file
 [ ] add example composition and categorize for Lion
 [ ] move constants from BBOSCViewController.h to BBOSC.h
+[ ] fix sender death on -disableExecution, does not reenable on -enableExecution
+[ ] add write signal input to sender patch, do not just send on any modification
